@@ -1,4 +1,7 @@
+'use client';
+
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 export default function ServiceAreaSection() {
   return (
@@ -6,16 +9,28 @@ export default function ServiceAreaSection() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center gap-6 justify-center">
           {/* Text Content */}
-          <div className="text-center md:text-right md:pr-4">
+          <motion.div 
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.6 }}
+            className="text-center md:text-right md:pr-4"
+          >
             <h2 className="text-2xl md:text-3xl font-bold text-primary-blue leading-tight">
               Serving The Tampa Bay Area,<br />
               Surrounding West Coast,<br />
               and Greater Florida
             </h2>
-          </div>
+          </motion.div>
 
           {/* Florida Map Image */}
-          <div className="flex justify-center md:justify-start">
+          <motion.div 
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="flex justify-center md:justify-start"
+          >
             <Image 
               src="/images/florida-image.png" 
               alt="Florida service area map" 
@@ -23,7 +38,7 @@ export default function ServiceAreaSection() {
               height={400}
               className="w-full h-auto max-w-lg"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

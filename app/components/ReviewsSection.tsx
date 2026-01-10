@@ -1,3 +1,7 @@
+'use client';
+
+import { motion } from 'framer-motion';
+
 export default function ReviewsSection() {
   const reviews = [
     {
@@ -27,7 +31,13 @@ export default function ReviewsSection() {
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4">
         {/* Tagline */}
-        <div className="text-center mb-12">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-12"
+        >
           <h2 className="text-3xl md:text-4xl font-normal text-primary-blue mb-4">
             Tailored construction and<br />
             emergency services solutions—
@@ -41,10 +51,16 @@ export default function ReviewsSection() {
           >
             Work With Us &gt;
           </a>
-        </div>
+        </motion.div>
 
         {/* Reviews Section */}
-        <div className="flex flex-col md:flex-row gap-8 items-start">
+        <motion.div 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="flex flex-col md:flex-row gap-8 items-start"
+        >
           {/* Google Reviews Badge */}
           <div className="flex flex-col items-center md:w-1/4">
             <div className="mb-2">
@@ -69,7 +85,14 @@ export default function ReviewsSection() {
           {/* Review Cards */}
           <div className="flex-1 grid grid-cols-1 md:grid-cols-3 gap-4">
             {reviews.map((review, index) => (
-              <div key={index} className="border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
+              <motion.div 
+                key={index} 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow"
+              >
                 <div className="flex items-start gap-3 mb-3">
                   <div className="w-10 h-10 rounded-full bg-purple-600 flex items-center justify-center text-white font-semibold">
                     {review.avatar}
@@ -89,10 +112,10 @@ export default function ReviewsSection() {
                 </div>
                 <p className="text-sm text-gray-700 leading-relaxed">{review.text}</p>
                 <button className="text-primary-blue text-xs mt-2 hover:underline">Read more</button>
-              </div>
+              </motion.div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

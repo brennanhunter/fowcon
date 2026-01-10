@@ -1,4 +1,7 @@
+'use client';
+
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 export default function CertificationBanner() {
   const certifications = [
@@ -14,7 +17,14 @@ export default function CertificationBanner() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex flex-wrap items-center justify-between gap-4 md:gap-8">
           {certifications.map((cert, index) => (
-            <div key={index} className="flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 flex-1 min-w-[150px]">
+            <motion.div 
+              key={index} 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 flex-1 min-w-[150px]"
+            >
               <Image
                 src={cert.src}
                 alt={cert.alt}
@@ -22,7 +32,7 @@ export default function CertificationBanner() {
                 height={cert.height}
                 className="h-20 md:h-24 w-auto object-contain"
               />
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
