@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const slides = [
   {
@@ -9,28 +10,41 @@ const slides = [
     isVideo: true,
     title: 'Your Trusted Partner',
     subtitle: 'In Home Remodeling',
-    subtitle2: 'and Restoration'
+    subtitle2: 'and Restoration',
+    ctas: [
+      { label: 'Contact Us', href: '/contact' },
+      { label: 'About Us', href: '/about' }
+    ]
   },
   {
     image: '/hero/hero-image-2.jpg',
     isVideo: false,
     title: 'Create and Build',
     subtitle: 'Your Dream Kitchen',
-    subtitle2: ''
+    subtitle2: '',
+    ctas: [
+      { label: 'Explore Kitchens', href: '/remodeling/kitchens' }
+    ]
   },
   {
     image: '/hero/hero-image-3.jpg',
     isVideo: false,
     title: 'Relax in Your Luxurious',
     subtitle: 'Custom Bathroom',
-    subtitle2: ''
+    subtitle2: '',
+    ctas: [
+      { label: 'Explore Bathrooms', href: '/remodeling/bathrooms' }
+    ]
   },
   {
     image: '/hero/hero-image-4.jpg',
     isVideo: false,
     title: 'Water, Mold, Wind, Fire.',
     subtitle: "We're Your Recovery Solution",
-    subtitle2: ''
+    subtitle2: '',
+    ctas: [
+      { label: 'Emergency Restoration', href: '/mitigation' }
+    ]
   }
 ];
 
@@ -112,6 +126,27 @@ export default function Hero() {
                 {slide.subtitle}
                 {slide.subtitle2 && <><br />{slide.subtitle2}</>}
               </motion.h1>
+              <motion.div
+                key={`ctas-${index}`}
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: index === currentSlide ? 1 : 0, y: index === currentSlide ? 0 : 30 }}
+                transition={{ duration: 0.8, delay: 0.8 }}
+                className={`flex flex-wrap gap-3 mt-6 ${index === 1 || index === 2 || index === 3 ? 'justify-end' : 'justify-start'}`}
+              >
+                {slide.ctas.map((cta, ctaIndex) => (
+                  <Link
+                    key={ctaIndex}
+                    href={cta.href}
+                    className={`px-8 py-4 font-bold rounded transition-colors text-base md:text-lg ${
+                      ctaIndex % 2 === 0
+                        ? 'bg-primary-blue text-white hover:bg-blue-800'
+                        : 'border-2 border-white text-white hover:bg-white/20'
+                    }`}
+                  >
+                    {cta.label}
+                  </Link>
+                ))}
+              </motion.div>
             </div>
           </div>
         </motion.div>
