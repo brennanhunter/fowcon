@@ -6,17 +6,6 @@ import Link from 'next/link';
 
 const slides = [
   {
-    image: '/videos/drone-hero-1.mp4',
-    isVideo: true,
-    title: 'Your Trusted Partner',
-    subtitle: 'In Home Remodeling',
-    subtitle2: 'and Restoration',
-    ctas: [
-      { label: 'Contact Us', href: '/contact' },
-      { label: 'About Us', href: '/about' }
-    ]
-  },
-  {
     image: '/hero/hero-image-2.jpg',
     isVideo: false,
     title: 'Create and Build',
@@ -45,6 +34,17 @@ const slides = [
     ctas: [
       { label: 'Emergency Restoration', href: '/mitigation' }
     ]
+  },
+  {
+    image: '/videos/drone-hero-1.mp4',
+    isVideo: true,
+    title: 'Your Trusted Partner',
+    subtitle: 'In Home Remodeling',
+    subtitle2: 'and Restoration',
+    ctas: [
+      { label: 'Contact Us', href: '/contact' },
+      { label: 'About Us', href: '/about' }
+    ]
   }
 ];
 
@@ -63,7 +63,7 @@ export default function Hero() {
   }, []);
 
   useEffect(() => {
-    if (currentSlide === 0 && videoRef.current) {
+    if (currentSlide === 3 && videoRef.current) {
       videoRef.current.currentTime = 0;
       videoRef.current.play();
     }
@@ -97,12 +97,12 @@ export default function Hero() {
             </video>
           ) : (
             <div
-              className={`absolute inset-0 ${index === 2 || index === 3 ? 'bg-primary-blue' : ''} ${index === 1 ? 'bg-center' : index === 2 ? 'bg-center' : index === 3 ? 'bg-bottom' : 'bg-top'}`}
+              className={`absolute inset-0 ${index === 1 || index === 2 ? 'bg-primary-blue' : ''} ${index === 0 ? 'bg-center' : index === 1 ? 'bg-center' : index === 2 ? 'bg-bottom' : 'bg-top'}`}
               style={{ 
                 backgroundImage: `url(${slide.image})`,
-                backgroundPosition: index === 2 || index === 3 ? 'center' : undefined,
-                backgroundSize: index === 2 || index === 3 ? 'contain' : 'cover',
-                backgroundRepeat: index === 2 || index === 3 ? 'no-repeat' : undefined
+                backgroundPosition: index === 1 || index === 2 ? 'center' : undefined,
+                backgroundSize: index === 1 || index === 2 ? 'contain' : 'cover',
+                backgroundRepeat: index === 1 || index === 2 ? 'no-repeat' : undefined
               }}
             />
           )}
@@ -117,7 +117,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: index === currentSlide ? 1 : 0, y: index === currentSlide ? 0 : 40 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
-                className={`text-3xl md:text-4xl lg:text-5xl font-normal leading-tight text-white ${index === 1 || index === 2 || index === 3 ? 'text-right' : 'text-left'}`}
+                className={`text-3xl md:text-4xl lg:text-5xl font-normal leading-tight text-white ${index === 0 || index === 1 || index === 2 ? 'text-right' : 'text-left'}`}
                 style={{
                   textShadow: '0 0 3px #193F75, 0 0 3px #193F75, 0 0 3px #193F75, 0 0 3px #193F75, 0 0 3px #193F75, 0 0 3px #193F75'
                 }}
@@ -131,7 +131,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: index === currentSlide ? 1 : 0, y: index === currentSlide ? 0 : 30 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
-                className={`flex flex-wrap gap-3 mt-6 ${index === 1 || index === 2 || index === 3 ? 'justify-end' : 'justify-start'}`}
+                className={`flex flex-wrap gap-3 mt-6 ${index === 0 || index === 1 || index === 2 ? 'justify-end' : 'justify-start'}`}
               >
                 {slide.ctas.map((cta, ctaIndex) => (
                   <Link
