@@ -86,22 +86,22 @@ const questions: Question[] = [
     answers: [
       {
         text: 'Tokyo — cutting-edge design and neon lights',
-        image: '/images/fakelivingroom.jpg',
+        image: '/images/quiz/question-3/top-left.jpg',
         styles: ['modern', 'industrial'],
       },
       {
         text: 'Tuscany — vineyards, stone villas, old-world charm',
-        image: '/images/fakelivingroom.jpg',
+        image: '/images/quiz/question-3/top-right.jpg',
         styles: ['mediterranean', 'traditional'],
       },
       {
         text: 'A Gulf Coast beach house — sand, sun, and slow living',
-        image: '/images/fakelivingroom.jpg',
+        image: '/images/quiz/question-3/bottom-left.jpg',
         styles: ['coastal'],
       },
       {
         text: 'A Marrakech riad — colorful tiles, textiles, and spice markets',
-        image: '/images/fakelivingroom.jpg',
+        image: '/images/quiz/question-3/bottom-right.jpg',
         styles: ['bohemian'],
       },
     ],
@@ -111,22 +111,22 @@ const questions: Question[] = [
     answers: [
       {
         text: 'Black, white, and charcoal with one bold pop of color',
-        image: '/images/fakelivingroom.jpg',
+        image: '/images/quiz/question-4/top-left.jpg',
         styles: ['modern', 'industrial'],
       },
       {
         text: 'Navy, burgundy, and gold',
-        image: '/images/fakelivingroom.jpg',
+        image: '/images/quiz/question-4/top-right.jpg',
         styles: ['traditional'],
       },
       {
         text: 'Warm terracotta, olive green, and sun-bleached yellow',
-        image: '/images/fakelivingroom.jpg',
+        image: '/images/quiz/question-4/bottom-left.jpg',
         styles: ['mediterranean', 'bohemian'],
       },
       {
         text: 'Sandy beige, soft blue, and driftwood gray',
-        image: '/images/fakelivingroom.jpg',
+        image: '/images/quiz/question-4/bottom-right.jpg',
         styles: ['coastal', 'farmhouse'],
       },
     ],
@@ -137,22 +137,22 @@ const questions: Question[] = [
     answers: [
       {
         text: 'Pour-over coffee in a spotless, sunlit kitchen',
-        image: '/images/fakekitchen.jpg',
+        image: '/images/quiz/question-5/top-left.jpg',
         styles: ['modern'],
       },
       {
         text: 'Vinyl spinning while you cook in a retro kitchen',
-        image: '/images/fakekitchen.jpg',
+        image: '/images/quiz/question-5/top-right.jpg',
         styles: ['midcentury', 'bohemian'],
       },
       {
         text: 'Barefoot on the patio, smoothie in hand, ocean breeze',
-        image: '/images/fakekitchen.jpg',
+        image: '/images/quiz/question-5/bottom-left.jpg',
         styles: ['coastal'],
       },
       {
         text: 'Big farmhouse table, fresh flowers, pancakes from scratch',
-        image: '/images/fakekitchen.jpg',
+        image: '/images/quiz/question-5/bottom-right.jpg',
         styles: ['farmhouse'],
       },
     ],
@@ -162,22 +162,22 @@ const questions: Question[] = [
     answers: [
       {
         text: 'Frameless glass, wall-mounted vanity, rainfall shower',
-        image: '/images/fakebathroom.jpg',
+        image: '/images/quiz/question-6/top-left.jpg',
         styles: ['modern'],
       },
       {
         text: 'Clawfoot tub, marble tile, polished brass fixtures',
-        image: '/images/fakebathroom.jpg',
+        image: '/images/quiz/question-6/top-right.jpg',
         styles: ['traditional'],
       },
       {
         text: 'Patterned cement tile, colorful textiles, plants everywhere',
-        image: '/images/fakebathroom.jpg',
+        image: '/images/quiz/question-6/bottom-left.jpg',
         styles: ['bohemian', 'mediterranean'],
       },
       {
         text: 'Concrete sink, black hardware, open pipe shelving',
-        image: '/images/fakebathroom.jpg',
+        image: '/images/quiz/question-6/bottom-right.jpg',
         styles: ['industrial'],
       },
     ],
@@ -187,22 +187,22 @@ const questions: Question[] = [
     answers: [
       {
         text: 'Polished concrete or blackened steel',
-        image: '/images/floorfake.jpg',
+        image: '/images/quiz/question-7/top-left.jpg',
         styles: ['industrial', 'modern'],
       },
       {
         text: 'Reclaimed barn wood or shiplap',
-        image: '/images/floorfake.jpg',
+        image: '/images/quiz/question-7/top-right.jpg',
         styles: ['farmhouse'],
       },
       {
         text: 'Rattan, jute, or woven seagrass',
-        image: '/images/floorfake.jpg',
+        image: '/images/quiz/question-7/bottom-left.jpg',
         styles: ['coastal', 'bohemian'],
       },
       {
         text: 'Hand-painted tile or wrought iron',
-        image: '/images/floorfake.jpg',
+        image: '/images/quiz/question-7/bottom-right.jpg',
         styles: ['mediterranean', 'traditional'],
       },
     ],
@@ -213,22 +213,22 @@ const questions: Question[] = [
     answers: [
       {
         text: 'Minimalist table, curated playlist, craft cocktails',
-        image: '/images/fakelivingroom.jpg',
+        image: '/images/quiz/question-8/top-left.jpg',
         styles: ['modern'],
       },
       {
         text: 'Candlelit formal dining with fine china and cloth napkins',
-        image: '/images/fakelivingroom.jpg',
+        image: '/images/quiz/question-8/top-right.jpg',
         styles: ['traditional'],
       },
       {
         text: 'Backyard bonfire, string lights, mismatched plates',
-        image: '/images/fakelivingroom.jpg',
+        image: '/images/quiz/question-8/bottom-left.jpg',
         styles: ['bohemian', 'farmhouse'],
       },
       {
         text: 'Long table under a pergola with wine and fresh herbs',
-        image: '/images/fakelivingroom.jpg',
+        image: '/images/quiz/question-8/bottom-right.jpg',
         styles: ['mediterranean', 'coastal'],
       },
     ],
@@ -238,22 +238,22 @@ const questions: Question[] = [
     answers: [
       {
         text: 'An Eames lounge chair',
-        image: '/images/fakelivingroom.jpg',
+        image: '/images/quiz/question-9/top-left.jpg',
         styles: ['midcentury'],
       },
       {
         text: 'A hand-carved antique armoire',
-        image: '/images/fakelivingroom.jpg',
+        image: '/images/quiz/question-9/top-right.jpg',
         styles: ['traditional', 'mediterranean'],
       },
       {
         text: 'A hanging rattan egg chair',
-        image: '/images/fakelivingroom.jpg',
+        image: '/images/quiz/question-9/bottom-left.jpg',
         styles: ['coastal', 'bohemian'],
       },
       {
         text: 'A vintage industrial drafting table',
-        image: '/images/fakelivingroom.jpg',
+        image: '/images/quiz/question-9/bottom-right.jpg',
         styles: ['industrial', 'midcentury'],
       },
     ],
@@ -263,22 +263,22 @@ const questions: Question[] = [
     answers: [
       {
         text: 'Sleek',
-        image: '/images/fakelivingroom.jpg',
+        image: '/images/quiz/question-10/top-left.jpg',
         styles: ['modern'],
       },
       {
         text: 'Breezy',
-        image: '/images/fakelivingroom.jpg',
+        image: '/images/quiz/question-10/top-right.jpg',
         styles: ['coastal'],
       },
       {
         text: 'Charming',
-        image: '/images/fakelivingroom.jpg',
+        image: '/images/quiz/question-10/bottom-left.jpg',
         styles: ['farmhouse', 'traditional'],
       },
       {
         text: 'Eclectic',
-        image: '/images/fakelivingroom.jpg',
+        image: '/images/quiz/question-10/bottom-right.jpg',
         styles: ['bohemian', 'midcentury'],
       },
     ],
@@ -304,7 +304,7 @@ const styleResults: Record<Style, StyleResult> = {
       'Large-format tile for a seamless, modern bathroom',
       'Integrated smart home features and hidden storage',
     ],
-    image: '/images/fakelivingroom.jpg',
+    image: '/images/quiz/results/modern.jpg',
   },
   traditional: {
     name: 'Traditional',
@@ -316,7 +316,7 @@ const styleResults: Record<Style, StyleResult> = {
       'Natural stone countertops and polished fixtures',
       'Detailed trim work, wainscoting, and chair rails',
     ],
-    image: '/images/fakelivingroom.jpg',
+    image: '/images/quiz/results/traditional.jpg',
   },
   coastal: {
     name: 'Coastal',
@@ -328,7 +328,7 @@ const styleResults: Record<Style, StyleResult> = {
       'Soft blue and sandy neutral accents throughout',
       'Natural woven textures — rattan, jute, and linen',
     ],
-    image: '/images/fakelivingroom.jpg',
+    image: '/images/quiz/results/coastal.jpg',
   },
   farmhouse: {
     name: 'Farmhouse',
@@ -340,7 +340,7 @@ const styleResults: Record<Style, StyleResult> = {
       'Reclaimed or wide-plank wood flooring',
       'Open shelving, vintage hardware, and warm lighting',
     ],
-    image: '/images/fakelivingroom.jpg',
+    image: '/images/quiz/results/farmhouse.jpg',
   },
   midcentury: {
     name: 'Mid-Century Modern',
@@ -352,7 +352,7 @@ const styleResults: Record<Style, StyleResult> = {
       'Bold, geometric tile patterns in bathrooms and kitchens',
       'Statement lighting fixtures and iconic furniture silhouettes',
     ],
-    image: '/images/fakelivingroom.jpg',
+    image: '/images/quiz/results/mid-century-modern.jpg',
   },
   mediterranean: {
     name: 'Mediterranean',
@@ -364,7 +364,7 @@ const styleResults: Record<Style, StyleResult> = {
       'Hand-painted or patterned tile backsplashes',
       'Wrought iron accents, warm stone, and stucco textures',
     ],
-    image: '/images/fakelivingroom.jpg',
+    image: '/images/quiz/results/mediterranean.jpg',
   },
   industrial: {
     name: 'Industrial',
@@ -376,7 +376,7 @@ const styleResults: Record<Style, StyleResult> = {
       'Open shelving with black iron brackets',
       'Matte black fixtures and exposed-style lighting',
     ],
-    image: '/images/fakelivingroom.jpg',
+    image: '/images/quiz/results/industrial.jpg',
   },
   bohemian: {
     name: 'Bohemian',
@@ -388,7 +388,7 @@ const styleResults: Record<Style, StyleResult> = {
       'Colorful, textured textiles and layered rugs',
       'Plenty of greenery, macrame, and handcrafted accents',
     ],
-    image: '/images/fakelivingroom.jpg',
+    image: '/images/quiz/results/bohemian.jpg',
   },
 };
 
