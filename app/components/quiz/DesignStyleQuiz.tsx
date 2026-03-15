@@ -36,7 +36,7 @@ const questions: Question[] = [
       {
         text: 'Clean lines, floating shelves, monochrome palette',
         image: '/images/quiz/question-1/top-left.jpg',
-        styles: ['modern'],
+        styles: ['modern', 'midcentury'],
       },
       {
         text: 'Rich wood, crown molding, and wingback chairs',
@@ -112,7 +112,7 @@ const questions: Question[] = [
       {
         text: 'Black, white, and charcoal with one bold pop of color',
         image: '/images/quiz/question-4/top-left.jpg',
-        styles: ['modern', 'industrial'],
+        styles: ['modern', 'industrial', 'midcentury'],
       },
       {
         text: 'Navy, burgundy, and gold',
@@ -168,7 +168,7 @@ const questions: Question[] = [
       {
         text: 'Clawfoot tub, marble tile, polished brass fixtures',
         image: '/images/quiz/question-6/top-right.jpg',
-        styles: ['traditional'],
+        styles: ['traditional', 'farmhouse'],
       },
       {
         text: 'Patterned cement tile, colorful textiles, plants everywhere',
@@ -214,7 +214,7 @@ const questions: Question[] = [
       {
         text: 'Minimalist table, curated playlist, craft cocktails',
         image: '/images/quiz/question-8/top-left.jpg',
-        styles: ['modern'],
+        styles: ['modern', 'midcentury'],
       },
       {
         text: 'Candlelit formal dining with fine china and cloth napkins',
@@ -264,7 +264,7 @@ const questions: Question[] = [
       {
         text: 'Sleek',
         image: '/images/quiz/question-10/top-left.jpg',
-        styles: ['modern'],
+        styles: ['modern', 'industrial'],
       },
       {
         text: 'Breezy',
