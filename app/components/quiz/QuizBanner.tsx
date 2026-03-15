@@ -41,7 +41,7 @@ export default function QuizBanner() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
             {previewImages.map((img, i) => (
               <motion.div
-                key={img.label}
+                key={img.src}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
