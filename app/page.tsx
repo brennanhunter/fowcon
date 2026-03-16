@@ -2,6 +2,7 @@ import Hero from "./components/Hero";
 import CertificationBanner from "./components/CertificationBanner";
 import ServicesOverview from "./components/ServicesOverview";
 import ProcessSection from "./components/ProcessSection";
+import FinancingBanner from "./components/FinancingBanner";
 import ReviewsSection from "./components/ReviewsSection";
 import QuizBanner from "./components/quiz/QuizBanner";
 import ServiceAreaSection from "./components/ServiceAreaSection";
@@ -15,6 +16,7 @@ export default function Home() {
       <ServicesOverview />
       <ReviewsSection />
       <ProcessSection />
+      <FinancingBanner />
       <QuizBanner />
       <ServiceAreaSection />
       <ClosingCTA />

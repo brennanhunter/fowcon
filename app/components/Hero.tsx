@@ -12,7 +12,7 @@ const slides = [
     subtitle: 'Your Dream Kitchen',
     subtitle2: '',
     ctas: [
-      { label: 'Explore Kitchens', href: '/remodeling/kitchens' }
+      { label: 'Explore Kitchens', href: '/construction/remodeling/kitchens' }
     ]
   },
   {
@@ -22,7 +22,7 @@ const slides = [
     subtitle: 'Custom Bathroom',
     subtitle2: '',
     ctas: [
-      { label: 'Explore Bathrooms', href: '/remodeling/bathrooms' }
+      { label: 'Explore Bathrooms', href: '/construction/remodeling/bathrooms' }
     ]
   },
   {

@@ -15,8 +15,8 @@ const steps = [
   {
     icon: FaPencilRuler,
     number: '02',
-    title: 'Custom Design & Estimate',
-    description: 'Our team creates a tailored design with material options at different price points, so you choose what fits your style and budget.'
+    title: 'Design, Plan & Estimate',
+    description: 'Our team creates a tailored design, builds a detailed scope of work, and presents a transparent estimate — so you choose what fits your style and budget.'
   },
   {
     icon: FaHardHat,
@@ -49,7 +49,7 @@ export default function ProcessSection() {
             How We Work
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            From the first phone call to the final walkthrough, we make the remodeling process simple and stress-free.
+            From the first phone call to the final walkthrough, we make the construction process simple and stress-free.
           </p>
         </motion.div>
 

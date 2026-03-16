@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Fowcon Inc | Expert Remodeling & Restoration",
-  description: "Professional home remodeling and emergency restoration services. Kitchens, bathrooms, and full mitigation — crafted with care, delivered with confidence.",
+  title: "Fowcon Inc | Expert Construction & Restoration",
+  description: "Professional home construction, remodeling, and emergency restoration services. Kitchens, bathrooms, additions, ADUs, and full mitigation — crafted with care, delivered with confidence.",
 };
 
 export default function RootLayout({

@@ -18,13 +18,12 @@ interface NavSection {
 }
 
 const navSections: Record<string, NavSection> = {
-  remodeling: {
-    label: 'Remodeling',
+  construction: {
+    label: 'Construction',
     links: [
-      { href: '/remodeling/kitchens', label: 'Kitchens' },
-      { href: '/remodeling/bathrooms', label: 'Bathrooms' },
-      { href: '/remodeling/flooring', label: 'Flooring' },
-      { href: '/remodeling/interiors', label: 'Interiors' },
+      { href: '/construction/additions', label: 'Additions' },
+      { href: '/construction/adu', label: 'ADU' },
+      { href: '/construction/remodeling', label: 'Remodeling' },
     ],
   },
   mitigation: {

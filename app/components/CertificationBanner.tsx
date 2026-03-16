@@ -9,7 +9,9 @@ export default function CertificationBanner() {
     { src: '/images/iicrc.png', alt: 'IICRC Certified', width: 120, height: 80 },
     { src: '/images/contractor-connection.png', alt: 'Contractor Connection Network Member', width: 200, height: 80 },
     { src: '/images/florida-general-contractor.png', alt: 'Florida General Contractor', width: 120, height: 80 },
-    { src: '/images/ria.webp', alt: 'RIA Restoration Industry Association', width: 180, height: 80 }
+    { src: '/images/ria.webp', alt: 'RIA Restoration Industry Association', width: 180, height: 80 },
+    { src: '/images/best-of-2026.png', alt: 'Best of 2026 — Best Contractor, Town and Country', width: 160, height: 80 },
+    { src: '/images/golden-hammer.png', alt: 'Contractor Connection Golden Hammer 2025 & 2026', width: 160, height: 80 }
   ];
 
   return (

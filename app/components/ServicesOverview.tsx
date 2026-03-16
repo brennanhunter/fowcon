@@ -8,25 +8,25 @@ const services = [
   {
     title: 'Kitchens',
     image: '/images/fakekitchen.jpg',
-    href: '/remodeling/kitchens',
+    href: '/construction/remodeling/kitchens',
     description: 'Custom designs that blend beauty with functionality.'
   },
   {
     title: 'Bathrooms',
     image: '/images/fakebathroom.jpg',
-    href: '/remodeling/bathrooms',
+    href: '/construction/remodeling/bathrooms',
     description: 'Luxurious upgrades from vanities to full remodels.'
   },
   {
     title: 'Interiors',
     image: '/images/fakelivingroom.jpg',
-    href: '/remodeling/interiors',
+    href: '/construction/remodeling/interiors',
     description: 'Living spaces reimagined to fit your lifestyle.'
   },
   {
     title: 'Flooring',
     image: '/images/floorfake.jpg',
-    href: '/remodeling/flooring',
+    href: '/construction/remodeling/flooring',
     description: 'Premium flooring installed with precision and care.'
   }
 ];
@@ -43,7 +43,7 @@ export default function ServicesOverview() {
           className="text-center mb-14"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">
-            What We Do
+            What We Build
           </h2>
           <p className="text-blue-200 text-lg max-w-2xl mx-auto">
             From kitchens to flooring, we transform every corner of your home with expert craftsmanship.
