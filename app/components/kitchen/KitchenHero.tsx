@@ -29,7 +29,7 @@ export default function KitchenHero() {
               Kitchen Remodeling
             </h1>
             <p className="text-xl text-white/90 max-w-2xl">
-              Your kitchen is the heart of your home. We design and build kitchens that are as functional as they are beautiful.
+              Full-service kitchen remodeling in Tampa Bay — from layout and design to cabinets, countertops, and finishing touches.
             </p>
             <button
               onClick={() => setIsModalOpen(true)}

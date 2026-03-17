@@ -17,10 +17,10 @@ export default function KitchenCTA() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Let&apos;s Build Your Dream Kitchen
+            Let&apos;s Talk About Your Kitchen
           </h2>
           <p className="text-blue-200 text-lg mb-8">
-            Schedule a free in-home consultation. We&apos;ll measure your space, discuss your vision, and provide a detailed estimate — no obligation.
+            We&apos;ll come to your home, look at the space, and put together a plan with real numbers — not a ballpark guess.
           </p>
           <button
             onClick={() => setIsModalOpen(true)}

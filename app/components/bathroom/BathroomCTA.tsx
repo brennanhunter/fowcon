@@ -19,10 +19,10 @@ export default function BathroomCTA() {
             transition={{ duration: 0.5 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Let&apos;s Build Your Dream Bathroom
+              Ready to Redo Your Bathroom?
             </h2>
             <p className="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">
-              Schedule a free consultation and get a personalized design plan and estimate — no pressure, no obligations.
+              We&apos;ll come out, look at the space, and give you a real estimate with material options you can compare side by side.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button

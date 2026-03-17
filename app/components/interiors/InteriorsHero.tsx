@@ -29,7 +29,7 @@ export default function InteriorsHero() {
               Complete Interior Remodeling
             </h1>
             <p className="text-xl text-white/90 max-w-2xl">
-              Living rooms, family rooms, home offices, laundry rooms, and beyond — we transform every space in your home.
+              Living rooms, family rooms, home offices, laundry rooms — the spaces you use every day deserve the same level of work as your kitchen or bathroom.
             </p>
             <button
               onClick={() => setIsModalOpen(true)}

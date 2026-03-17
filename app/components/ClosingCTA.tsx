@@ -18,10 +18,10 @@ export default function ClosingCTA() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Ready to Transform Your Home?
+            Let&apos;s Talk About Your Project
           </h2>
           <p className="text-blue-200 text-lg mb-8 max-w-2xl mx-auto">
-            Whether it&apos;s a dream kitchen, a luxury bathroom, or storm damage that needs expert care — we&apos;re here to help. Get started with a free, no-obligation consultation.
+            Kitchen remodel, bathroom upgrade, storm damage, or something bigger — we&apos;ll come to you, assess the work, and give you a straight answer on what it takes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <button

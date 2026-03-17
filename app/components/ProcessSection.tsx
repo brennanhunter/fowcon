@@ -16,19 +16,19 @@ const steps = [
     icon: FaPencilRuler,
     number: '02',
     title: 'Design, Plan & Estimate',
-    description: 'Our team creates a tailored design, builds a detailed scope of work, and presents a transparent estimate — so you choose what fits your style and budget.'
+    description: 'We put together a scope of work with material selections, a project timeline, and an itemized estimate. No surprises down the road.'
   },
   {
     icon: FaHardHat,
     number: '03',
-    title: 'Expert Build-Out',
-    description: 'Our licensed crew gets to work — on time, on budget, and with daily communication so you always know what\'s happening.'
+    title: 'Build-Out',
+    description: 'Our licensed crew handles the work — on schedule, within budget, and with daily updates so you always know where things stand.'
   },
   {
     icon: FaCheckCircle,
     number: '04',
     title: 'Final Walkthrough',
-    description: 'We don\'t finish until you\'re 100% satisfied. A detailed walkthrough ensures every detail meets your expectations.'
+    description: 'Before we call it done, we walk through every detail with you. If something isn\'t right, we fix it.'
   }
 ];
 

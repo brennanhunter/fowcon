@@ -4,20 +4,20 @@ import { motion } from 'framer-motion';
 
 const whyUs = [
   {
-    title: 'Personalized Design',
-    description: 'We don\'t do cookie-cutter. Every kitchen is designed around how you cook, entertain, and live.'
+    title: 'Your Kitchen, Your Layout',
+    description: 'We don\'t work from templates. Every kitchen design starts with how you actually use the space — your cooking habits, your storage needs, your morning routine.'
   },
   {
-    title: 'Transparent Pricing',
-    description: 'Multiple options at different price points so you get exactly what fits your budget — no surprises.'
+    title: 'Upfront, Itemized Estimates',
+    description: 'You\'ll see exactly what every cabinet, countertop, and fixture costs before we start. We give you options at different price points so you stay in control.'
   },
   {
-    title: 'Licensed & Insured',
-    description: 'Florida-licensed general contractor with full insurance. Your home is protected from start to finish.'
+    title: 'One Crew, Start to Finish',
+    description: 'Our in-house team handles demo, framing, plumbing, electrical, and finish work. You deal with one project manager — not five different subcontractors.'
   },
   {
-    title: 'On-Time Delivery',
-    description: 'We set realistic timelines and stick to them. Daily updates keep you informed every step of the way.'
+    title: 'Licensed General Contractor',
+    description: 'Fowcon holds a Florida general contractor license (CGC 1531101) and carries full insurance. Permits, inspections, code compliance — we handle all of it.'
   }
 ];
 

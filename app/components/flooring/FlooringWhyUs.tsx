@@ -6,27 +6,27 @@ import { FaPencilRuler, FaDollarSign, FaShieldAlt, FaClock } from 'react-icons/f
 const reasons = [
   {
     icon: FaPencilRuler,
-    title: 'Expert Guidance',
+    title: 'We Know Every Material',
     description:
-      "Not sure which flooring is right for your space? We\u2019ll help you compare options based on durability, style, and budget \u2014 no sales pressure.",
+      "Hardwood, LVP, porcelain, natural stone — we install all of them. We\'ll help you pick the right floor for the room based on traffic, moisture, and how you live.",
   },
   {
     icon: FaDollarSign,
-    title: 'Transparent Pricing',
+    title: 'Honest Pricing, No Add-Ons',
     description:
-      "You\u2019ll get a clear, itemized estimate covering materials, labor, and prep work. No hidden fees, no surprises at the end of the project.",
+      "Our estimates include materials, labor, subfloor prep, and trim work. You see the full cost upfront — not a low number that balloons after demo day.",
   },
   {
     icon: FaShieldAlt,
-    title: 'Licensed & Insured',
+    title: 'Proper Subfloor Prep',
     description:
-      "Fowcon is a Florida-licensed general contractor. Your home and your investment are fully protected throughout the entire installation process.",
+      'New floors are only as good as what\'s underneath. We level, repair, and moisture-test every subfloor before installation — the step most installers skip.',
   },
   {
     icon: FaClock,
-    title: 'Efficient Timelines',
+    title: 'Fast, Clean Installs',
     description:
-      "We know flooring projects disrupt your daily life. We work efficiently to minimize downtime and get your new floors installed on schedule.",
+      'We protect your furniture, contain dust, and get floors down efficiently. Most single-room installs are done in a day or two.',
   },
 ];
 
@@ -45,7 +45,7 @@ export default function FlooringWhyUs() {
             Why Tampa Bay Homeowners Trust Fowcon for Flooring
           </h2>
           <p className="text-gray-700 max-w-2xl mx-auto text-lg">
-            From material selection to final installation, we deliver quality craftsmanship and a seamless experience.
+            Good flooring starts with proper prep work and the right material for the job. Here&apos;s how we get it right.
           </p>
         </motion.div>
 

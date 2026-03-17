@@ -32,10 +32,10 @@ export default function KitchenServices() {
                 Complete Kitchen Remodeling Services
               </h2>
               <p className="text-gray-700 mb-4 text-lg leading-relaxed">
-                Your kitchen should be a reflection of how you live — whether that&apos;s hosting dinner parties, managing school-morning chaos, or finally having the space to cook the way you&apos;ve always wanted. At Fowcon, every kitchen remodel starts with a dedicated design consultation where we listen to your ideas, assess your space, and develop a custom plan that works within your budget.
+                A kitchen remodel is one of the biggest upgrades you can make to your home — and one of the most complex. At Fowcon, we start every kitchen project with an in-home consultation where we look at your space, talk through what&apos;s working and what isn&apos;t, and put together a plan that fits both your goals and your budget.
               </p>
               <p className="text-gray-700 mb-8 text-lg leading-relaxed">
-                As a full-service remodeling contractor, we handle every phase of the project from start to finish — so you never have to coordinate between multiple trades. Our kitchen remodeling services include:
+                We manage the entire project in-house — demolition, framing, plumbing, electrical, cabinetry, countertops, and finish work. One team, one project manager, and no subcontractor runaround. Our Tampa Bay kitchen remodeling services include:
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {features.map((feature, index) => (
@@ -46,7 +46,7 @@ export default function KitchenServices() {
                 ))}
               </div>
               <p className="text-gray-700 mt-6 leading-relaxed">
-                We acquire all necessary permits, handle demolition and construction, and manage every sub-contractor involved — plumbing, electrical, and beyond. You get one point of contact and zero headaches.
+                We pull all necessary permits, handle inspections, and manage every trade involved. You get one phone number to call with questions — that&apos;s it.
               </p>
             </motion.div>
             <motion.div

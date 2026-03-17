@@ -32,10 +32,10 @@ export default function BathroomServices() {
                 Complete Bathroom Remodeling Services
               </h2>
               <p className="text-gray-700 mb-4 text-lg leading-relaxed">
-                Your bathroom should be more than just functional — it should be a space you actually enjoy. Whether you&apos;re dreaming of a spa-like master bath or need to maximize a small guest bathroom, Fowcon starts every project with a personalized design consultation to understand your vision and your daily needs.
+                Bathroom remodeling in Tampa Bay requires a contractor who understands wet-area construction — waterproofing, proper tile slope, moisture management, and Florida building code. At Fowcon, every bathroom remodel starts with a site visit where we assess the existing conditions and talk through what you want the finished space to look and feel like.
               </p>
               <p className="text-gray-700 mb-8 text-lg leading-relaxed">
-                As a full-service remodeling contractor, we manage every trade and every detail from demolition to final walkthrough. Our bathroom remodeling services include:
+                We handle every trade under one roof — plumbing, electrical, tile, drywall, paint, and finish work. One crew, one schedule, one project manager keeping it all on track. Our bathroom remodeling services include:
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {features.map((feature, index) => (
@@ -46,7 +46,7 @@ export default function BathroomServices() {
                 ))}
               </div>
               <p className="text-gray-700 mt-6 leading-relaxed">
-                We handle all permits, plumbing, electrical, and waterproofing — so you have one team, one point of contact, and zero stress.
+                Permits, inspections, plumbing rough-ins, waterproofing — we handle everything so you don&apos;t have to chase down separate contractors.
               </p>
             </motion.div>
             <motion.div

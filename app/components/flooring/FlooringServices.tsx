@@ -32,10 +32,10 @@ export default function FlooringServices() {
                 Complete Flooring Services
               </h2>
               <p className="text-gray-700 mb-4 text-lg leading-relaxed">
-                New floors change everything about a room — the look, the feel, even the acoustics. Whether you&apos;re updating a single room or reflooring your entire home, Fowcon delivers expert installation with meticulous attention to detail and clean, professional results.
+                New flooring changes the entire feel of a room. Whether you&apos;re replacing worn-out carpet, upgrading to hardwood, or putting waterproof LVP in a kitchen or bathroom, Fowcon handles the full job — from ripping out the old material to installing baseboards and trim.
               </p>
               <p className="text-gray-700 mb-8 text-lg leading-relaxed">
-                We work with every major flooring material and handle the full scope of work from subfloor preparation to final trim. Our flooring services include:
+                We work with every major flooring type and handle subfloor prep, leveling, and moisture testing as part of every install. Our Tampa Bay flooring services include:
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {services.map((service, index) => (
@@ -46,7 +46,7 @@ export default function FlooringServices() {
                 ))}
               </div>
               <p className="text-gray-700 mt-6 leading-relaxed">
-                We remove your old flooring, prep the subfloor, and install your new floors — one crew, one project manager, zero hassle.
+                Old flooring out, new flooring in, trim finished — one crew handles it all so you&apos;re not coordinating between different trades.
               </p>
             </motion.div>
             <motion.div

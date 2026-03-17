@@ -9,25 +9,25 @@ const services = [
     title: 'Kitchens',
     image: '/images/fakekitchen.jpg',
     href: '/construction/remodeling/kitchens',
-    description: 'Custom designs that blend beauty with functionality.'
+    description: 'Custom layouts, cabinetry, countertops, and full gut renovations.'
   },
   {
     title: 'Bathrooms',
     image: '/images/fakebathroom.jpg',
     href: '/construction/remodeling/bathrooms',
-    description: 'Luxurious upgrades from vanities to full remodels.'
+    description: 'Walk-in showers, tile work, vanities, and complete bathroom rebuilds.'
   },
   {
     title: 'Interiors',
     image: '/images/fakelivingroom.jpg',
     href: '/construction/remodeling/interiors',
-    description: 'Living spaces reimagined to fit your lifestyle.'
+    description: 'Living rooms, home offices, and every other space that needs attention.'
   },
   {
     title: 'Flooring',
     image: '/images/floorfake.jpg',
     href: '/construction/remodeling/flooring',
-    description: 'Premium flooring installed with precision and care.'
+    description: 'Hardwood, tile, luxury vinyl, and natural stone — installed right.'
   }
 ];
 
@@ -46,7 +46,7 @@ export default function ServicesOverview() {
             What We Build
           </h2>
           <p className="text-blue-200 text-lg max-w-2xl mx-auto">
-            From kitchens to flooring, we transform every corner of your home with expert craftsmanship.
+            Licensed general contractor serving Tampa Bay — kitchens, bathrooms, flooring, and full interior remodels.
           </p>
         </motion.div>
 

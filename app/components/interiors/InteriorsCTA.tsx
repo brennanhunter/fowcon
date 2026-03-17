@@ -19,10 +19,10 @@ export default function InteriorsCTA() {
             transition={{ duration: 0.5 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Ready to Transform Your Home&apos;s Interior?
+              Every Room Deserves the Same Attention
             </h2>
             <p className="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">
-              Schedule a free consultation and get a custom design plan for any room in your home — no pressure, no obligations.
+              Living rooms, home offices, laundry rooms — whatever space isn&apos;t working for you, let&apos;s fix it. We&apos;ll start with a walkthrough and go from there.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button

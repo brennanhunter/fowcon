@@ -19,10 +19,10 @@ export default function FlooringCTA() {
             transition={{ duration: 0.5 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Ready for New Floors?
+              Need New Floors?
             </h2>
             <p className="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">
-              Schedule a free consultation and get a personalized estimate for your flooring project — no pressure, no obligations.
+              Tell us what rooms you&apos;re looking at and we&apos;ll walk you through material options with real pricing — no sales pitch.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button

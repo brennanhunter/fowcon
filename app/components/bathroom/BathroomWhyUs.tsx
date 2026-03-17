@@ -6,27 +6,27 @@ import { FaPencilRuler, FaDollarSign, FaShieldAlt, FaClock } from 'react-icons/f
 const reasons = [
   {
     icon: FaPencilRuler,
-    title: 'Personalized Design',
+    title: 'Wet-Area Specialists',
     description:
-      'Every bathroom is different. We design around your space, your style, and how you actually use the room — not cookie-cutter templates.',
+      'Bathrooms are the most detail-sensitive rooms in the house. Waterproofing, tile slope, drain placement, ventilation — our crews know exactly what it takes to build a bathroom that holds up.',
   },
   {
     icon: FaDollarSign,
-    title: 'Transparent Pricing',
+    title: 'Clear, Itemized Pricing',
     description:
-      "You\u2019ll get a detailed, itemized estimate before we start. No hidden fees, no surprise change orders \u2014 just straightforward pricing you can plan around.",
+      "You\'ll get a line-by-line estimate covering every tile, fixture, and labor hour before we swing a hammer. What we quote is what you pay.",
   },
   {
     icon: FaShieldAlt,
-    title: 'Licensed & Insured',
+    title: 'Fully Licensed & Permitted',
     description:
-      'Fowcon is a Florida-licensed general contractor with full insurance coverage. Your home and your investment are protected from start to finish.',
+      'We pull all required permits, schedule inspections, and ensure your bathroom meets Florida building code. License CGC 1531101.',
   },
   {
     icon: FaClock,
-    title: 'On-Time Delivery',
+    title: 'Minimal Disruption',
     description:
-      'We know a bathroom out of commission is a daily inconvenience. We set clear timelines and stick to them so you can get back to your routine.',
+      'We know being down a bathroom is tough. We plan the work to keep downtime short and communicate daily so you always know where things stand.',
   },
 ];
 
@@ -42,10 +42,10 @@ export default function BathroomWhyUs() {
           className="text-center mb-14"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-primary-blue mb-4">
-            Why Tampa Bay Homeowners Choose Fowcon
+            Why Tampa Bay Homeowners Choose Fowcon for Bathrooms
           </h2>
           <p className="text-gray-700 max-w-2xl mx-auto text-lg">
-            We combine craftsmanship, clear communication, and respect for your home to deliver bathroom remodels you&apos;ll love for years to come.
+            Bathrooms require a different level of precision than any other room. Here&apos;s why our clients trust us with theirs.
           </p>
         </motion.div>
 

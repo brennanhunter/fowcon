@@ -29,7 +29,7 @@ export default function FlooringHero() {
               Flooring Installation &amp; Refinishing
             </h1>
             <p className="text-xl text-white/90 max-w-2xl">
-              From hardwood and tile to luxury vinyl and natural stone, we install floors that transform the look and feel of your entire home.
+              Hardwood, tile, LVP, and natural stone — professionally installed by a licensed Tampa Bay flooring contractor.
             </p>
             <button
               onClick={() => setIsModalOpen(true)}

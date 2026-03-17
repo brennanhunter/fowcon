@@ -69,11 +69,11 @@ export default function ReviewsSection() {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-normal text-primary-blue mb-4">
-            Expert remodeling and<br />
-            restoration you can trust—
+            Real results for Tampa Bay<br />
+            homeowners since 2017.
           </h2>
           <p className="text-3xl md:text-4xl text-primary-blue mb-6">
-            Crafted with care, <span className="italic">delivered with confidence.</span>
+            Don&apos;t take our word for it — <span className="italic">hear from our clients.</span>
           </p>
           <a 
             href="/contact" 

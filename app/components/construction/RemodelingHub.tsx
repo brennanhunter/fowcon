@@ -60,9 +60,9 @@ export default function RemodelingHub() {
             transition={{ duration: 0.6, delay: 0.15 }}
             className="text-blue-200 text-lg max-w-2xl mx-auto"
           >
-            Transform your home room by room. Whether it&apos;s a dream kitchen, a spa-like
-            bathroom, or a complete interior refresh — our licensed team delivers expert
-            craftsmanship every step of the way.
+            Kitchens, bathrooms, flooring, and full interior renovations — handled by our in-house
+            crews from demo to final walkthrough. Licensed Florida general contractor serving Tampa
+            Bay and surrounding areas.
           </motion.p>
         </div>
       </section>

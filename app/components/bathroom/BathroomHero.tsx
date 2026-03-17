@@ -29,7 +29,7 @@ export default function BathroomHero() {
               Bathroom Remodeling
             </h1>
             <p className="text-xl text-white/90 max-w-2xl">
-              From spa-inspired retreats to efficient family bathrooms, we create spaces that elevate your daily routine.
+              Complete bathroom remodels for Tampa Bay homeowners — tile, plumbing, fixtures, and everything in between.
             </p>
             <button
               onClick={() => setIsModalOpen(true)}
