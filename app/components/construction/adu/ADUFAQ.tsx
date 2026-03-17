@@ -18,7 +18,7 @@ const faqs = [
   {
     question: 'How long does it take to build an ADU?',
     answer:
-      'Most ADU projects take 12–24 weeks from design to completion, depending on size and complexity. Permitting timelines can vary by municipality.',
+      'Timelines depend on the size, complexity, and local permitting requirements. During your consultation, we\'ll outline a realistic schedule tailored to your specific project.',
   },
   {
     question: 'Do you offer financing for ADU construction?',

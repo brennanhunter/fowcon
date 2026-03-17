@@ -23,10 +23,10 @@ export default function Footer() {
               General Contractor License | CGC 1531101
             </p>
             <p className="text-primary-blue font-bold text-lg md:text-xl mb-2">
-              Plumbing License | MRSR2151
+              Mold Remediation License | MRSR2151
             </p>
             <p className="text-primary-blue font-bold text-lg md:text-xl">
-              Fully Insured | 10+ Years in Business
+              Fully Insured | 9+ Years in Business
             </p>
           </div>
         </div>
@@ -36,9 +36,9 @@ export default function Footer() {
       <div className="bg-white border-t border-gray-300">
         <div className="max-w-7xl mx-auto px-4 py-4">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-700">
-            <p>Copyright © 2025 Fowcon Inc - All Rights Reserved.</p>
+            <p>Copyright © 2026 Fowcon Inc - All Rights Reserved.</p>
             <div className="flex gap-8">
-              <p>Toll Free: 833-336-9366</p>
+              <p>Toll Free: 833-336-9266</p>
               <p>Tampa Area: 813-501-1552</p>
             </div>
           </div>

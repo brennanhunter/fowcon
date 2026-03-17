@@ -8,7 +8,7 @@ const faqs = [
   {
     question: 'How long does a typical home addition take?',
     answer:
-      'Timelines vary based on scope, but most room additions take 8–16 weeks from permitting to completion. Second-story additions may take longer. We provide a detailed timeline during your consultation.',
+      'Every project is different — timelines depend on the scope, complexity, and permitting requirements. We provide a detailed timeline tailored to your specific project during your consultation.',
   },
   {
     question: 'Do I need a permit for a home addition?',
