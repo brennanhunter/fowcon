@@ -57,7 +57,7 @@ export default function KitchenServices() {
               className="relative aspect-[4/3] rounded-lg overflow-hidden"
             >
               <Image
-                src="/images/fakekitchen.jpg"
+                src="/images/kitchens-b-a/Jim 1 After.jpeg"
                 alt="Kitchen remodeling project"
                 fill
                 className="object-cover"
@@ -79,7 +79,7 @@ export default function KitchenServices() {
               className="relative aspect-[4/3] rounded-lg overflow-hidden order-2 lg:order-1"
             >
               <Image
-                src="/images/fakekitchen.jpg"
+                src="/images/kitchens-b-a/Parotto After.jpg"
                 alt="Premium kitchen materials and craftsmanship"
                 fill
                 className="object-cover"

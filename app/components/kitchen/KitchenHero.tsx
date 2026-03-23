@@ -11,8 +11,8 @@ export default function KitchenHero() {
   return (
     <section className="relative h-[50vh] min-h-[400px] overflow-hidden">
       <Image
-        src="/images/fakekitchen.jpg"
-        alt="Beautiful custom kitchen remodel"
+        src="/images/kitchens-b-a/Waechter 2 After.jpg"
+        alt="Beautiful custom kitchen remodel by Fowcon"
         fill
         className="object-cover"
         priority

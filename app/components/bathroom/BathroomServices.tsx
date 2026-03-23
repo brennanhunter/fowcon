@@ -57,8 +57,8 @@ export default function BathroomServices() {
               className="relative aspect-[4/3] rounded-lg overflow-hidden"
             >
               <Image
-                src="/images/fakebathroom.jpg"
-                alt="Bathroom remodeling project"
+                src="/images/baths-b-a/Hansen 1 After.jpeg"
+                alt="Completed bathroom remodeling project"
                 fill
                 className="object-cover"
               />
@@ -79,7 +79,7 @@ export default function BathroomServices() {
               className="relative aspect-[4/3] rounded-lg overflow-hidden order-2 lg:order-1"
             >
               <Image
-                src="/images/fakebathroom.jpg"
+                src="/images/baths-b-a/Harroun P.B. After.jpg"
                 alt="Premium bathroom materials and finishes"
                 fill
                 className="object-cover"

@@ -10,14 +10,14 @@ import ConsultationModal from '../ConsultationModal';
 const categories = [
   {
     title: 'Kitchens',
-    image: '/images/fakekitchen.jpg',
+    image: '/images/kitchens-b-a/Waechter 1 After.jpg',
     href: '/construction/remodeling/kitchens',
     description:
       'From custom cabinetry to full gut renovations, we design and build kitchens that are as functional as they are beautiful.',
   },
   {
     title: 'Bathrooms',
-    image: '/images/fakebathroom.jpg',
+    image: '/images/baths-b-a/Harroun M.B. 2 After.jpg',
     href: '/construction/remodeling/bathrooms',
     description:
       'Luxurious upgrades from walk-in showers to complete bathroom transformations. Your personal retreat starts here.',

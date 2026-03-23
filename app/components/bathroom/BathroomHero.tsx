@@ -11,8 +11,8 @@ export default function BathroomHero() {
   return (
     <section className="relative h-[50vh] min-h-[400px] overflow-hidden">
       <Image
-        src="/images/fakebathroom.jpg"
-        alt="Beautiful custom bathroom remodel"
+        src="/images/baths-b-a/Harroun M.B. 1-a After.jpg"
+        alt="Beautiful custom bathroom remodel by Fowcon"
         fill
         className="object-cover"
         priority
