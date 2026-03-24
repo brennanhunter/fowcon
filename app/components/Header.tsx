@@ -111,10 +111,10 @@ export default function Header() {
             <span className="text-gray-600">Available 24 Hours a Day, 7 Days a Week!</span>
           </div>
           <div className="flex gap-4">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-primary-blue hover:text-blue-800">
+            <a href="https://www.facebook.com/p/Fowcon-Inc-61574603855650/" target="_blank" rel="noopener noreferrer" className="text-primary-blue hover:text-blue-800">
               <FaFacebookF className="text-sm" />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-primary-blue hover:text-blue-800">
+            <a href="https://www.instagram.com/fowconinc/" target="_blank" rel="noopener noreferrer" className="text-primary-blue hover:text-blue-800">
               <FaInstagram className="text-sm" />
             </a>
           </div>
@@ -265,10 +265,10 @@ export default function Header() {
                   <span className="font-semibold">claims@fowconinc.com</span>
                 </a>
                 <div className="flex gap-4 pt-2">
-                  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-primary-blue hover:text-blue-800">
+                  <a href="https://www.facebook.com/p/Fowcon-Inc-61574603855650/" target="_blank" rel="noopener noreferrer" className="text-primary-blue hover:text-blue-800">
                     <FaFacebookF className="text-lg" />
                   </a>
-                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-primary-blue hover:text-blue-800">
+                  <a href="https://www.instagram.com/fowconinc/" target="_blank" rel="noopener noreferrer" className="text-primary-blue hover:text-blue-800">
                     <FaInstagram className="text-lg" />
                   </a>
                 </div>

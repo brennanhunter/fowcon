@@ -101,7 +101,14 @@ export default function ReviewsSection() {
                 <path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/>
               </svg>
             </div>
-            <p className="font-semibold text-primary-blue">Google Reviews</p>
+            <a
+              href="https://www.google.com/search?q=Fowcon+Construction+Reviews"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-primary-blue hover:underline"
+            >
+              Google Reviews
+            </a>
             <div className="flex items-center gap-2 mt-2">
               <span className="text-3xl font-semibold text-primary-blue">4.9</span>
               <div className="flex text-yellow-400 text-xl">
@@ -110,6 +117,14 @@ export default function ReviewsSection() {
                 ))}
               </div>
             </div>
+            <a
+              href="https://www.google.com/search?q=Fowcon+Construction+Reviews"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-gray-500 hover:text-primary-blue transition-colors mt-1"
+            >
+              158 reviews
+            </a>
           </div>
 
           {/* Rotating Review Cards */}

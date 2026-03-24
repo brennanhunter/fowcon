@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Hero from "./components/Hero";
 import CertificationBanner from "./components/CertificationBanner";
+import StatsCounter from "./components/StatsCounter";
 import ServicesOverview from "./components/ServicesOverview";
 import ProcessSection from "./components/ProcessSection";
 import FinancingBanner from "./components/FinancingBanner";
@@ -29,6 +30,7 @@ export default function Home() {
     <div>
       <Hero />
       <CertificationBanner />
+      <StatsCounter />
       <ServicesOverview />
       <ReviewsSection />
       <ProcessSection />
