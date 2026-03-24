@@ -6,24 +6,34 @@ import { FaChevronDown } from 'react-icons/fa';
 
 const faqs = [
   {
-    question: 'How long does a typical home addition take?',
+    question: 'How long does a home addition take?',
     answer:
-      'Every project is different — timelines depend on the scope, complexity, and permitting requirements. We provide a detailed timeline tailored to your specific project during your consultation.',
+      'Most home additions take 3–6 months from permitting to final walkthrough. A single-room addition on a slab can be closer to 3 months, while a second story or multi-room addition with complex structural work may take 5–6 months. We\'ll give you a detailed timeline specific to your project during your consultation.',
   },
   {
     question: 'Do I need a permit for a home addition?',
     answer:
-      'Yes. All structural additions require building permits in Florida. We handle the entire permitting process for you so there are no surprises.',
+      'Yes. All structural additions in Florida require building permits, engineering plans, and multiple inspections. As a licensed general contractor (CGC 1531101), we handle the entire permitting process — from engineering drawings to final inspection sign-off.',
   },
   {
     question: 'Will the addition match my existing home?',
     answer:
-      'Absolutely. Our team carefully matches rooflines, siding, paint, and finishes so the addition blends seamlessly with your existing home — inside and out.',
+      'Absolutely. Our team carefully matches rooflines, siding, paint, trim, and finishes so the addition blends seamlessly with your existing home — inside and out. The goal is for it to look like it was always part of the original build.',
+  },
+  {
+    question: 'Can I live in my home during construction?',
+    answer:
+      'In most cases, yes. We stage the work to minimize disruption and maintain safe access to your living areas. For larger projects like second-story additions, we\'ll discuss the best plan to keep your daily routine as normal as possible.',
+  },
+  {
+    question: 'How much does a home addition cost?',
+    answer:
+      'Costs vary significantly based on size, complexity, and finishes. A simple room addition starts differently than a full second-story build. During your free consultation, we provide itemized estimates with multiple options at different price points — so you see exactly where every dollar goes.',
   },
   {
     question: 'Do you offer financing for additions?',
     answer:
-      'We offer financing tailored to your specific project needs. Ask about available plans during your consultation.',
+      'Yes. We offer flexible financing options to help make your project achievable. We\'ll walk you through available plans during your consultation so you can find the right fit for your budget.',
   },
 ];
 
