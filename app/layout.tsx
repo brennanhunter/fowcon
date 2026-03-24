@@ -15,8 +15,42 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Fowcon Inc | Expert Construction & Restoration",
-  description: "Professional home construction, remodeling, and emergency restoration services. Kitchens, bathrooms, additions, ADUs, and full mitigation — crafted with care, delivered with confidence.",
+  metadataBase: new URL("https://fowconinc.com"),
+  title: {
+    default: "Fowcon Construction | Kitchen & Bathroom Remodeling Tampa Bay",
+    template: "%s | Fowcon Construction",
+  },
+  description:
+    "Tampa Bay's trusted remodeling contractor. Kitchen remodeling, bathroom renovations, home additions, ADUs, and emergency restoration. Licensed & insured. Free consultations — call (833) 336-9266.",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://fowconinc.com",
+    siteName: "Fowcon Construction",
+    title: "Fowcon Construction | Kitchen & Bathroom Remodeling Tampa Bay",
+    description:
+      "Tampa Bay's trusted remodeling contractor. Kitchen remodeling, bathroom renovations, home additions, ADUs, and emergency restoration. Licensed & insured.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Fowcon Construction | Kitchen & Bathroom Remodeling Tampa Bay",
+    description:
+      "Tampa Bay's trusted remodeling contractor. Kitchen remodeling, bathroom renovations, home additions, and emergency restoration.",
+  },
+  alternates: {
+    canonical: "https://fowconinc.com",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({
@@ -24,11 +58,144 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const localBusinessJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "@id": "https://fowconinc.com/#organization",
+    name: "Fowcon Construction",
+    alternateName: "Fowcon Inc",
+    url: "https://fowconinc.com",
+    telephone: "+1-833-336-9266",
+    email: "claims@fowconinc.com",
+    description:
+      "Tampa Bay's trusted remodeling contractor specializing in kitchen and bathroom renovations, home additions, ADUs, and emergency restoration services.",
+    foundingDate: "2017",
+    areaServed: [
+      {
+        "@type": "City",
+        name: "Tampa",
+        containedInPlace: { "@type": "State", name: "Florida" },
+      },
+      {
+        "@type": "City",
+        name: "St. Petersburg",
+        containedInPlace: { "@type": "State", name: "Florida" },
+      },
+      {
+        "@type": "City",
+        name: "Clearwater",
+        containedInPlace: { "@type": "State", name: "Florida" },
+      },
+      {
+        "@type": "City",
+        name: "Westchase",
+        containedInPlace: { "@type": "State", name: "Florida" },
+      },
+      {
+        "@type": "City",
+        name: "Brandon",
+        containedInPlace: { "@type": "State", name: "Florida" },
+      },
+      {
+        "@type": "City",
+        name: "Wesley Chapel",
+        containedInPlace: { "@type": "State", name: "Florida" },
+      },
+    ],
+    hasCredential: [
+      {
+        "@type": "EducationalOccupationalCredential",
+        credentialCategory: "license",
+        name: "Florida General Contractor License",
+        recognizedBy: {
+          "@type": "GovernmentOrganization",
+          name: "Florida Department of Business and Professional Regulation",
+        },
+        identifier: "CGC 1531101",
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        credentialCategory: "license",
+        name: "Mold Remediation License",
+        identifier: "MRSR2151",
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        credentialCategory: "certification",
+        name: "IICRC Certified Firm",
+      },
+    ],
+    knowsAbout: [
+      "Kitchen Remodeling",
+      "Bathroom Remodeling",
+      "Home Additions",
+      "ADU Construction",
+      "Flooring Installation",
+      "Interior Remodeling",
+      "Water Damage Restoration",
+      "Fire Damage Restoration",
+      "Mold Remediation",
+      "Storm Damage Restoration",
+    ],
+    makesOffer: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Kitchen Remodeling",
+          description:
+            "Custom kitchen remodeling including countertops, cabinets, islands, and full gut renovations.",
+          areaServed: "Tampa Bay, FL",
+          provider: { "@id": "https://fowconinc.com/#organization" },
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Bathroom Remodeling",
+          description:
+            "Professional bathroom remodeling including custom showers, vanities, tile work, and tub-to-shower conversions.",
+          areaServed: "Tampa Bay, FL",
+          provider: { "@id": "https://fowconinc.com/#organization" },
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Home Remodeling",
+          description:
+            "Full-service home remodeling including kitchens, bathrooms, flooring, and whole-home interiors.",
+          areaServed: "Tampa Bay, FL",
+          provider: { "@id": "https://fowconinc.com/#organization" },
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Emergency Restoration",
+          description:
+            "24/7 emergency restoration for water damage, fire damage, mold, and storm damage.",
+          areaServed: "Tampa Bay, FL",
+          provider: { "@id": "https://fowconinc.com/#organization" },
+        },
+      },
+    ],
+  };
+
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(localBusinessJsonLd),
+          }}
+        />
         <Header />
         {children}
         <Footer />

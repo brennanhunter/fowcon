@@ -6,9 +6,18 @@ import InteriorsFAQ from '@/app/components/interiors/InteriorsFAQ';
 import InteriorsCTA from '@/app/components/interiors/InteriorsCTA';
 
 export const metadata: Metadata = {
-  title: 'Complete Interior Remodeling Tampa Bay | Fowcon Inc',
+  title: 'Complete Interior Remodeling Tampa Bay',
   description:
-    'Whole-home interior remodeling in Tampa Bay. Living rooms, family rooms, home offices, laundry rooms & more. Licensed & insured. Free consultation.',
+    'Whole-home interior remodeling in Tampa Bay by Fowcon Construction. Living rooms, family rooms, home offices, laundry rooms, and more. Licensed & insured. Free consultation — (833) 336-9266.',
+  openGraph: {
+    title: 'Complete Interior Remodeling Tampa Bay | Fowcon Construction',
+    description:
+      'Whole-home interior remodeling in Tampa Bay. Living rooms, family rooms, home offices, and more by a licensed general contractor.',
+    url: 'https://fowconinc.com/construction/remodeling/interiors',
+  },
+  alternates: {
+    canonical: 'https://fowconinc.com/construction/remodeling/interiors',
+  },
 };
 
 export default function InteriorsPage() {

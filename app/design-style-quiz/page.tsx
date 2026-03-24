@@ -2,9 +2,18 @@ import type { Metadata } from 'next';
 import DesignStyleQuiz from '@/app/components/quiz/DesignStyleQuiz';
 
 export const metadata: Metadata = {
-  title: 'Design Style Quiz | Fowcon Inc',
+  title: 'Design Style Quiz',
   description:
-    'Discover your interior design style with our free quiz. Modern, Traditional, Coastal, Farmhouse, Mid-Century Modern, Mediterranean, Industrial, or Bohemian — find out which style fits you and start planning your remodel.',
+    'Discover your interior design style with our free quiz. Modern, Traditional, Coastal, Farmhouse, Mid-Century Modern, Mediterranean, Industrial, or Bohemian — find your style and start planning your remodel with Fowcon Construction.',
+  openGraph: {
+    title: 'Design Style Quiz | Fowcon Construction',
+    description:
+      'Take our free quiz to discover your interior design style. Plan your next Tampa Bay remodeling project with confidence.',
+    url: 'https://fowconinc.com/design-style-quiz',
+  },
+  alternates: {
+    canonical: 'https://fowconinc.com/design-style-quiz',
+  },
 };
 
 export default function DesignStyleQuizPage() {

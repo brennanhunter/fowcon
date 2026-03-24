@@ -3,9 +3,18 @@ import AboutHero from '@/app/components/about/AboutHero';
 import ServiceAreaContent from '@/app/components/about/ServiceAreaContent';
 
 export const metadata: Metadata = {
-  title: 'Service Area | Fowcon Inc',
+  title: 'Service Area',
   description:
-    'Fowcon serves Tampa, St. Petersburg, Clearwater, Westchase, and the greater Tampa Bay area for remodeling and restoration. Contact us to confirm service in your area.',
+    'Fowcon Construction serves Tampa, St. Petersburg, Clearwater, Westchase, and the greater Tampa Bay area for remodeling and restoration. Contact us to confirm service in your area.',
+  openGraph: {
+    title: 'Service Area | Fowcon Construction',
+    description:
+      'Proudly serving Tampa, St. Petersburg, Clearwater, Westchase, and all of Tampa Bay for remodeling and restoration.',
+    url: 'https://fowconinc.com/about/service-area',
+  },
+  alternates: {
+    canonical: 'https://fowconinc.com/about/service-area',
+  },
 };
 
 export default function ServiceAreaPage() {

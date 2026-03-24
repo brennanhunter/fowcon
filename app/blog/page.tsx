@@ -2,9 +2,18 @@ import type { Metadata } from 'next';
 import AboutHero from '@/app/components/about/AboutHero';
 
 export const metadata: Metadata = {
-  title: 'Blog | Fowcon Inc',
+  title: 'Blog',
   description:
-    'Tips, trends, and insights on home remodeling and restoration from the Fowcon team.',
+    'Tips, trends, and insights on kitchen remodeling, bathroom renovations, home additions, and restoration from the Fowcon Construction team in Tampa Bay.',
+  openGraph: {
+    title: 'Blog | Fowcon Construction',
+    description:
+      'Tips, trends, and insights on home remodeling and restoration from Fowcon Construction.',
+    url: 'https://fowconinc.com/blog',
+  },
+  alternates: {
+    canonical: 'https://fowconinc.com/blog',
+  },
 };
 
 export default function BlogPage() {
