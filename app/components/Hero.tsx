@@ -51,19 +51,21 @@ const slides = [
 
 export default function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [hasLoaded, setHasLoaded] = useState(false);
+  const [videoReady, setVideoReady] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
-    setHasLoaded(true);
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000); // Change slide every 5 seconds
+    }, 5000);
 
     return () => clearInterval(timer);
   }, []);
 
   useEffect(() => {
+    if (currentSlide === 3) {
+      setVideoReady(true);
+    }
     if (currentSlide === 3 && videoRef.current) {
       videoRef.current.currentTime = 0;
       videoRef.current.play();
@@ -93,8 +95,9 @@ export default function Hero() {
               loop
               muted
               playsInline
+              preload="none"
             >
-              <source src={slide.image} type="video/mp4" />
+              {videoReady && <source src={slide.image} type="video/mp4" />}
             </video>
           ) : index === 0 ? (
             <Image

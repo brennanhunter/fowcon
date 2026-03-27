@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
+import dynamic from "next/dynamic";
 import Hero from "./components/Hero";
 import CertificationBanner from "./components/CertificationBanner";
-import StatsCounter from "./components/StatsCounter";
-import ServicesOverview from "./components/ServicesOverview";
-import ProcessSection from "./components/ProcessSection";
-import FinancingBanner from "./components/FinancingBanner";
-import ReviewsSection from "./components/ReviewsSection";
-import QuizBanner from "./components/quiz/QuizBanner";
-import ServiceAreaSection from "./components/ServiceAreaSection";
-import ClosingCTA from "./components/ClosingCTA";
+
+const StatsCounter = dynamic(() => import("./components/StatsCounter"));
+const ServicesOverview = dynamic(() => import("./components/ServicesOverview"));
+const ReviewsSection = dynamic(() => import("./components/ReviewsSection"));
+const ProcessSection = dynamic(() => import("./components/ProcessSection"));
+const FinancingBanner = dynamic(() => import("./components/FinancingBanner"));
+const QuizBanner = dynamic(() => import("./components/quiz/QuizBanner"));
+const ServiceAreaSection = dynamic(() => import("./components/ServiceAreaSection"));
+const ClosingCTA = dynamic(() => import("./components/ClosingCTA"));
 
 export const metadata: Metadata = {
   title: "Fowcon Construction | Kitchen & Bathroom Remodeling Tampa Bay",
