@@ -104,17 +104,25 @@ export default function Hero() {
               priority
               className="object-cover object-center"
             />
-          ) : (
-            <div
-              className={`absolute inset-0 ${index === 1 || index === 2 ? 'bg-primary-blue' : ''} ${index === 1 ? 'bg-center' : index === 2 ? 'bg-bottom' : 'bg-top'}`}
-              style={{
-                backgroundImage: `url(${slide.image})`,
-                backgroundPosition: index === 1 || index === 2 ? 'center' : undefined,
-                backgroundSize: index === 1 || index === 2 ? 'contain' : 'cover',
-                backgroundRepeat: index === 1 || index === 2 ? 'no-repeat' : undefined
-              }}
-            />
-          )}
+          ) : index === 1 ? (
+            <div className="absolute inset-0 bg-primary-blue">
+              <Image
+                src={slide.image}
+                alt="Custom bathroom remodeling by Fowcon Construction"
+                fill
+                className="object-contain object-center"
+              />
+            </div>
+          ) : index === 2 ? (
+            <div className="absolute inset-0 bg-primary-blue">
+              <Image
+                src={slide.image}
+                alt="Water, mold, wind and fire damage restoration by Fowcon Construction"
+                fill
+                className="object-contain object-bottom"
+              />
+            </div>
+          ) : null}
           {/* Dark overlay */}
           <div className="absolute inset-0 bg-black/20"></div>
           
