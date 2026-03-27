@@ -17,7 +17,7 @@ export default function MitigationHero({ title, subtitle, image, imageAlt, ctaTe
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <section className="relative h-[50vh] min-h-[400px] overflow-hidden">
+    <section className="relative h-[50vh] min-h-[400px] overflow-hidden bg-primary-blue">
       {/* <Image
         src={image}
         alt={imageAlt}
@@ -25,7 +25,7 @@ export default function MitigationHero({ title, subtitle, image, imageAlt, ctaTe
         className="object-cover"
         priority
       /> */}
-      <div className="absolute inset-0 bg-black/50" />
+      {/* <div className="absolute inset-0 bg-black/50" /> */}
       <div className="relative h-full flex items-center">
         <div className="max-w-7xl mx-auto px-4 w-full">
           <motion.div
