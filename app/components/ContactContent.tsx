@@ -52,11 +52,28 @@ export default function ContactContent() {
     message: '',
   });
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: Connect to Formspree, email service, or API route
-    setSubmitted(true);
+    setSubmitting(true);
+    setError('');
+
+    try {
+      const res = await fetch('https://formspree.io/f/xvzzokev', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      if (!res.ok) throw new Error();
+      setSubmitted(true);
+    } catch {
+      setError('Something went wrong. Please try again or call us directly.');
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -284,11 +301,15 @@ export default function ContactContent() {
                         />
                       </div>
 
+                      {error && (
+                        <p className="text-red-600 text-sm text-center">{error}</p>
+                      )}
                       <button
                         type="submit"
-                        className="w-full py-3.5 bg-primary-blue text-white font-bold rounded-md hover:bg-blue-800 transition-colors text-lg cursor-pointer"
+                        disabled={submitting}
+                        className="w-full py-3.5 bg-primary-blue text-white font-bold rounded-md hover:bg-blue-800 transition-colors text-lg cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
                       >
-                        Send Message
+                        {submitting ? 'Sending...' : 'Send Message'}
                       </button>
                       <p className="text-xs text-gray-400 text-center">
                         No spam, no obligation. Your information stays with us.
