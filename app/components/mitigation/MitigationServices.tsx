@@ -63,7 +63,7 @@ export default function MitigationServices({
               transition={{ duration: 0.6, delay: 0.2 }}
               className="relative aspect-[4/3] rounded-lg overflow-hidden"
             >
-              <Image src={image} alt={imageAlt} fill className="object-cover" />
+              {/* <Image src={image} alt={imageAlt} fill className="object-cover" /> */}
             </motion.div>
           </div>
         </div>
@@ -79,7 +79,7 @@ export default function MitigationServices({
               transition={{ duration: 0.6 }}
               className="relative aspect-[4/3] rounded-lg overflow-hidden order-2 lg:order-1"
             >
-              <Image src={secondImage} alt={secondImageAlt} fill className="object-cover" />
+              {/* <Image src={secondImage} alt={secondImageAlt} fill className="object-cover" /> */}
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: 30 }}
