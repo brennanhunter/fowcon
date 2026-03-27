@@ -14,7 +14,6 @@ export const fowconTheme = buildLegacyTheme({
   '--brand-primary': blue,
   '--default-button-color': blue,
   '--focus-color': blue,
-  '--link-color': blue,
 
   '--state-info-color': blue,
   '--state-success-color': '#22c55e',
@@ -23,7 +22,4 @@ export const fowconTheme = buildLegacyTheme({
 
   '--main-navigation-color': blue,
   '--main-navigation-color--inverted': white,
-
-  '--focus-ring-box-shadow-base': `0 0 0 1px ${white}`,
-  '--focus-ring-box-shadow-style': `0 0 0 3px ${blue}`,
 });
