@@ -96,7 +96,7 @@ export default function AdditionsPage() {
   };
 
   return (
-    <main>
+    <div>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(additionsServiceJsonLd) }}
@@ -110,6 +110,6 @@ export default function AdditionsPage() {
       <AdditionsWhyUs />
       <AdditionsFAQ />
       <AdditionsCTA />
-    </main>
+    </div>
   );
 }

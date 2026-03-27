@@ -7,9 +7,9 @@ import FlooringFAQ from '@/app/components/flooring/FlooringFAQ';
 import FlooringCTA from '@/app/components/flooring/FlooringCTA';
 
 export const metadata: Metadata = {
-  title: 'Flooring Installation & Refinishing Tampa Bay',
+  title: 'Flooring Installation Tampa Bay | Flooring Contractors Near Me',
   description:
-    'Professional flooring installation in Tampa Bay by Fowcon Construction. Hardwood, tile, luxury vinyl, and natural stone. Licensed & insured. Free consultation — (833) 336-9266.',
+    'Expert flooring installation in Tampa, St. Pete & Clearwater. Hardwood, tile, luxury vinyl & stone. Licensed contractor. FREE consultation — (833) 336-9266. Serving Tampa Bay.',
   openGraph: {
     title: 'Flooring Installation & Refinishing Tampa Bay | Fowcon Construction',
     description:
@@ -23,13 +23,13 @@ export const metadata: Metadata = {
 
 export default function FlooringPage() {
   return (
-    <main>
+    <div>
       <FlooringHero />
       <FlooringServices />
       <FlooringWhyUs />
       <FlooringGallery />
       <FlooringFAQ />
       <FlooringCTA />
-    </main>
+    </div>
   );
 }

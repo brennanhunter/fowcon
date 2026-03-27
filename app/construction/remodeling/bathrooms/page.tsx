@@ -7,9 +7,9 @@ import BathroomFAQ from '@/app/components/bathroom/BathroomFAQ';
 import BathroomCTA from '@/app/components/bathroom/BathroomCTA';
 
 export const metadata: Metadata = {
-  title: 'Bathroom Remodeling Tampa Bay | Custom Bathroom Renovations',
+  title: 'Bathroom Remodeling Tampa Bay | Bathroom Remodelers Near Me',
   description:
-    'Professional bathroom remodeling in Tampa Bay by Fowcon Construction. Custom showers, vanities, tile work, tub-to-shower conversions, and full renovations. Licensed & insured. Free consultation — (833) 336-9266.',
+    'Expert bathroom remodeling in Tampa, St. Petersburg & Clearwater. Custom showers, vanities, tile, tub-to-shower conversions. Licensed contractor. FREE consultation — (833) 336-9266.',
   openGraph: {
     title: 'Bathroom Remodeling Tampa Bay | Fowcon Construction',
     description:
@@ -89,7 +89,7 @@ export default function BathroomsPage() {
   };
 
   return (
-    <main>
+    <div>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -108,6 +108,6 @@ export default function BathroomsPage() {
       <BathroomGallery />
       <BathroomFAQ />
       <BathroomCTA />
-    </main>
+    </div>
   );
 }

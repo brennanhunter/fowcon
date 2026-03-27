@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const slides = [
   {
@@ -95,10 +96,18 @@ export default function Hero() {
             >
               <source src={slide.image} type="video/mp4" />
             </video>
+          ) : index === 0 ? (
+            <Image
+              src={slide.image}
+              alt="Kitchen remodeling by Fowcon Construction"
+              fill
+              priority
+              className="object-cover object-center"
+            />
           ) : (
             <div
-              className={`absolute inset-0 ${index === 1 || index === 2 ? 'bg-primary-blue' : ''} ${index === 0 ? 'bg-center' : index === 1 ? 'bg-center' : index === 2 ? 'bg-bottom' : 'bg-top'}`}
-              style={{ 
+              className={`absolute inset-0 ${index === 1 || index === 2 ? 'bg-primary-blue' : ''} ${index === 1 ? 'bg-center' : index === 2 ? 'bg-bottom' : 'bg-top'}`}
+              style={{
                 backgroundImage: `url(${slide.image})`,
                 backgroundPosition: index === 1 || index === 2 ? 'center' : undefined,
                 backgroundSize: index === 1 || index === 2 ? 'contain' : 'cover',
@@ -153,16 +162,20 @@ export default function Hero() {
       ))}
 
       {/* Slide indicators */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-2 z-20">
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex z-20">
         {slides.map((_, index) => (
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`w-3 h-3 rounded-full transition-all ${
-              index === currentSlide ? 'bg-white w-8' : 'bg-white/50'
-            }`}
+            className="p-3 flex items-center justify-center"
             aria-label={`Go to slide ${index + 1}`}
-          />
+          >
+            <span
+              className={`block h-3 rounded-full transition-all ${
+                index === currentSlide ? 'bg-white w-8' : 'bg-white/50 w-3'
+              }`}
+            />
+          </button>
         ))}
       </div>
     </section>

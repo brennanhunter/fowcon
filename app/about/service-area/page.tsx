@@ -19,12 +19,12 @@ export const metadata: Metadata = {
 
 export default function ServiceAreaPage() {
   return (
-    <main>
+    <div>
       <AboutHero
         title="Our Service Area"
         subtitle="Proudly serving Tampa Bay, the surrounding West Coast, and Greater Florida."
       />
       <ServiceAreaContent />
-    </main>
+    </div>
   );
 }

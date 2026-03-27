@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
 export default function DesignStyleQuizPage() {
   return (
-    <main>
+    <div>
       <div className="bg-primary-blue py-16 text-center">
         <div className="max-w-3xl mx-auto px-4">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
@@ -31,6 +31,6 @@ export default function DesignStyleQuizPage() {
         </div>
       </div>
       <DesignStyleQuiz />
-    </main>
+    </div>
   );
 }

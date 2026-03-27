@@ -9,7 +9,7 @@ import { FaBolt, FaShieldAlt, FaFileInvoiceDollar, FaHandsHelping } from 'react-
 
 export default function WaterDamageContent() {
   return (
-    <main>
+    <div>
       <MitigationHero
         title="Water Damage Restoration"
         subtitle="When water wreaks havoc on your property, immediate action is crucial. Our expert team responds fast to extract water, dry your property, and prevent further damage."
@@ -102,6 +102,6 @@ export default function WaterDamageContent() {
         heading="Water Damage? We're Here Now."
         subtitle="Call us 24/7 for emergency water damage restoration. Fast response, expert service, full reconstruction."
       />
-    </main>
+    </div>
   );
 }

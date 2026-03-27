@@ -19,12 +19,12 @@ export const metadata: Metadata = {
 
 export default function LeadershipPage() {
   return (
-    <main>
+    <div>
       <AboutHero
         title="Our Leadership"
         subtitle="Experienced professionals who are on-site, not just on-call."
       />
       <LeadershipContent />
-    </main>
+    </div>
   );
 }

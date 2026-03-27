@@ -19,12 +19,12 @@ export const metadata: Metadata = {
 
 export default function CareersPage() {
   return (
-    <main>
+    <div>
       <AboutHero
         title="Careers at Fowcon"
         subtitle="Build your career with a team that builds with care."
       />
       <CareersContent />
-    </main>
+    </div>
   );
 }

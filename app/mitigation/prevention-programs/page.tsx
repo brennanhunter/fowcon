@@ -19,12 +19,12 @@ export const metadata: Metadata = {
 
 export default function PreventionProgramsPage() {
   return (
-    <main>
+    <div>
       <AboutHero
         title="Prevention Programs"
         subtitle="The best restoration is the one you never need. Protect your home and build the right partnerships."
       />
       <PreventionContent />
-    </main>
+    </div>
   );
 }

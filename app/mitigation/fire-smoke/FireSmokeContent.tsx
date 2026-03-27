@@ -9,7 +9,7 @@ import { FaBolt, FaShieldAlt, FaFileInvoiceDollar, FaHandsHelping } from 'react-
 
 export default function FireSmokeContent() {
   return (
-    <main>
+    <div>
       <MitigationHero
         title="Fire & Smoke Damage Restoration"
         subtitle="Fire damage is devastating, but you're not alone. Our experienced team guides you through every step — from emergency response to full reconstruction."
@@ -102,6 +102,6 @@ export default function FireSmokeContent() {
         heading="Fire Damage? We're Here to Help."
         subtitle="Call us 24/7 for emergency fire and smoke damage restoration. We'll guide you through every step from cleanup to reconstruction."
       />
-    </main>
+    </div>
   );
 }

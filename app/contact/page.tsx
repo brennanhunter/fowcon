@@ -19,12 +19,12 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <main>
+    <div>
       <AboutHero
         title="Contact Us"
         subtitle="Ready to start your project? Have a question? We'd love to hear from you."
       />
       <ContactContent />
-    </main>
+    </div>
   );
 }

@@ -9,7 +9,7 @@ import { FaBolt, FaShieldAlt, FaFileInvoiceDollar, FaTools } from 'react-icons/f
 
 export default function StormWindContent() {
   return (
-    <main>
+    <div>
       <MitigationHero
         title="Storm & Wind Damage Restoration"
         subtitle="When nature strikes, you need a reliable partner to secure your property and restore it fast. Our emergency team is ready to deploy."
@@ -102,6 +102,6 @@ export default function StormWindContent() {
         heading="Storm Damage? We're Ready to Help."
         subtitle="Call us 24/7 for emergency storm damage restoration. Immediate response, expert repairs, full reconstruction."
       />
-    </main>
+    </div>
   );
 }

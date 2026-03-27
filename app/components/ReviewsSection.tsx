@@ -171,16 +171,20 @@ export default function ReviewsSection() {
               >
                 ‹
               </button>
-              <div className="flex gap-2">
+              <div className="flex">
                 {reviews.map((_, index) => (
                   <button
                     key={index}
                     onClick={() => setCurrent(index)}
-                    className={`w-2.5 h-2.5 rounded-full transition-all ${
-                      index === current ? 'bg-primary-blue w-6' : 'bg-gray-300'
-                    }`}
+                    className="p-2.5 flex items-center justify-center"
                     aria-label={`Go to review set ${index + 1}`}
-                  />
+                  >
+                    <span
+                      className={`block h-2.5 rounded-full transition-all ${
+                        index === current ? 'bg-primary-blue w-6' : 'bg-gray-300 w-2.5'
+                      }`}
+                    />
+                  </button>
                 ))}
               </div>
               <button

@@ -6,9 +6,9 @@ import InteriorsFAQ from '@/app/components/interiors/InteriorsFAQ';
 import InteriorsCTA from '@/app/components/interiors/InteriorsCTA';
 
 export const metadata: Metadata = {
-  title: 'Complete Interior Remodeling Tampa Bay',
+  title: 'Interior Remodeling Tampa Bay | Home Remodelers Near Me',
   description:
-    'Whole-home interior remodeling in Tampa Bay by Fowcon Construction. Living rooms, family rooms, home offices, laundry rooms, and more. Licensed & insured. Free consultation — (833) 336-9266.',
+    'Complete home remodeling in Tampa, St. Petersburg & Clearwater. Living rooms, family rooms, home offices & more. Licensed contractor. FREE consultation — (833) 336-9266.',
   openGraph: {
     title: 'Complete Interior Remodeling Tampa Bay | Fowcon Construction',
     description:
@@ -22,12 +22,12 @@ export const metadata: Metadata = {
 
 export default function InteriorsPage() {
   return (
-    <main>
+    <div>
       <InteriorsHero />
       <InteriorsServices />
       <InteriorsGallery />
       <InteriorsFAQ />
       <InteriorsCTA />
-    </main>
+    </div>
   );
 }

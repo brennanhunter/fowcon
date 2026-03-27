@@ -19,12 +19,12 @@ export const metadata: Metadata = {
 
 export default function StoryPage() {
   return (
-    <main>
+    <div>
       <AboutHero
         title="Our Story"
         subtitle="From restoration roots to full-service remodeling — built on trust, craftsmanship, and heart."
       />
       <StoryContent />
-    </main>
+    </div>
   );
 }

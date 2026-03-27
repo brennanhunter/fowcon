@@ -7,9 +7,9 @@ import KitchenFAQ from '@/app/components/kitchen/KitchenFAQ';
 import KitchenCTA from '@/app/components/kitchen/KitchenCTA';
 
 export const metadata: Metadata = {
-  title: 'Kitchen Remodeling Tampa Bay | Expert Kitchen Renovations',
+  title: 'Kitchen Remodeling Tampa Bay | Kitchen Remodelers Near Me',
   description:
-    'Custom kitchen remodeling in Tampa Bay by Fowcon Construction. Countertops, cabinets, islands, and full gut renovations. Licensed general contractor with expert craftsmanship. Free consultation — (833) 336-9266.',
+    'Top-rated kitchen remodeling in Tampa, St. Pete & Clearwater. Custom cabinets, countertops, islands & full renovations. Licensed contractor. FREE consultation — (833) 336-9266. Serving Tampa Bay.',
   openGraph: {
     title: 'Kitchen Remodeling Tampa Bay | Fowcon Construction',
     description:

@@ -18,8 +18,8 @@ export const metadata: Metadata = {
 
 export default function RemodelingPage() {
   return (
-    <main>
+    <div>
       <RemodelingHub />
-    </main>
+    </div>
   );
 }

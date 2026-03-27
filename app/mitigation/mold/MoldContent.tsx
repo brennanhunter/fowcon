@@ -9,7 +9,7 @@ import { FaSearch, FaShieldAlt, FaClipboardCheck, FaHandsHelping } from 'react-i
 
 export default function MoldContent() {
   return (
-    <main>
+    <div>
       <MitigationHero
         title="Mold Remediation"
         subtitle="IICRC-certified professionals who identify, contain, and eliminate mold safely — protecting your health and your property."
@@ -102,6 +102,6 @@ export default function MoldContent() {
         heading="Concerned About Mold? Get a Free Inspection."
         subtitle="Our certified team will assess your property, create a remediation plan, and restore your peace of mind."
       />
-    </main>
+    </div>
   );
 }

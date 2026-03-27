@@ -106,7 +106,7 @@ export default function FAQPage() {
   };
 
   return (
-    <main>
+    <div>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
@@ -116,6 +116,6 @@ export default function FAQPage() {
         subtitle="Everything you need to know about working with Fowcon."
       />
       <FAQContent />
-    </main>
+    </div>
   );
 }

@@ -21,11 +21,11 @@ export const metadata: Metadata = {
 
 export default function ADUPage() {
   return (
-    <main>
+    <div>
       <ADUHero />
       <ADUServices />
       <ADUFAQ />
       <ADUCTA />
-    </main>
+    </div>
   );
 }

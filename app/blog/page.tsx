@@ -1,8 +1,11 @@
 import type { Metadata } from 'next';
 import AboutHero from '@/app/components/about/AboutHero';
+import BlogContent from './BlogContent';
+import { client } from '@/sanity/lib/client';
+import { featuredPostQuery, nonFeaturedPostsQuery } from '@/sanity/lib/queries';
 
 export const metadata: Metadata = {
-  title: 'Blog',
+  title: 'Blog | Fowcon Construction',
   description:
     'Tips, trends, and insights on kitchen remodeling, bathroom renovations, home additions, and restoration from the Fowcon Construction team in Tampa Bay.',
   openGraph: {
@@ -16,20 +19,29 @@ export const metadata: Metadata = {
   },
 };
 
-export default function BlogPage() {
+interface Post {
+  _id: string;
+  title: string;
+  slug: { current: string };
+  mainImage?: { asset: { _ref: string }; alt?: string };
+  excerpt?: string;
+  publishedAt?: string;
+  categories?: { _id: string; title: string }[];
+}
+
+export default async function BlogPage() {
+  const [featured, posts]: [Post | null, Post[]] = await Promise.all([
+    client.fetch(featuredPostQuery),
+    client.fetch(nonFeaturedPostsQuery),
+  ]);
+
   return (
-    <main>
+    <div>
       <AboutHero
         title="Blog"
-        subtitle="Tips, trends, and insights from our team."
+        subtitle="Tips, trends, and insights on remodeling and restoration from our Tampa Bay team."
       />
-      <section className="py-20">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <p className="text-gray-500 text-lg">
-            No articles yet — check back soon!
-          </p>
-        </div>
-      </section>
-    </main>
+      <BlogContent featured={featured} posts={posts} />
+    </div>
   );
 }
