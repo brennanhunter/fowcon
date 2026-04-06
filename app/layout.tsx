@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
 import SiteChrome from "./components/SiteChrome";
 import { Analytics } from "@vercel/analytics/next";
 
@@ -30,15 +29,21 @@ export const metadata: Metadata = {
     title: "Fowcon Construction | Kitchen & Bathroom Remodeling Tampa Bay",
     description:
       "Tampa Bay's trusted remodeling contractor. Kitchen remodeling, bathroom renovations, home additions, ADUs, and emergency restoration. Licensed & insured.",
+    images: [
+      {
+        url: "/logos/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Fowcon Construction — Kitchen & Bathroom Remodeling Tampa Bay",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Fowcon Construction | Kitchen & Bathroom Remodeling Tampa Bay",
     description:
       "Tampa Bay's trusted remodeling contractor. Kitchen remodeling, bathroom renovations, home additions, and emergency restoration.",
-  },
-  alternates: {
-    canonical: "https://fowconinc.com",
+    images: ["/logos/logo.png"],
   },
   robots: {
     index: true,
@@ -136,6 +141,30 @@ export default function RootLayout({
       "Fire Damage Restoration",
       "Mold Remediation",
       "Storm Damage Restoration",
+    ],
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "YOUR STREET ADDRESS",
+      addressLocality: "Tampa",
+      addressRegion: "FL",
+      postalCode: "YOUR ZIP",
+      addressCountry: "US",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 27.9506,
+      longitude: -82.4572,
+    },
+    image: "https://fowconinc.com/logos/logo.png",
+    logo: "https://fowconinc.com/logos/logo.png",
+    priceRange: "$$",
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "07:00",
+        closes: "18:00",
+      },
     ],
     makesOffer: [
       {
