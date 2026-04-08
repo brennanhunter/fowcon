@@ -4,6 +4,8 @@ import BlogContent from './BlogContent';
 import { client } from '@/sanity/lib/client';
 import { featuredPostQuery, nonFeaturedPostsQuery } from '@/sanity/lib/queries';
 
+export const revalidate = 60;
+
 export const metadata: Metadata = {
   title: 'Blog | Fowcon Construction',
   description:

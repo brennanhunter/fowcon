@@ -6,6 +6,8 @@ import { postBySlugQuery, allPostsQuery } from '@/sanity/lib/queries';
 import { urlFor } from '@/sanity/lib/image';
 import BlogPostContent from './BlogPostContent';
 
+export const revalidate = 60;
+
 interface Post {
   _id: string;
   title: string;

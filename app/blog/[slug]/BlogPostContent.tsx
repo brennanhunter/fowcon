@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { PortableText, type PortableTextBlock } from 'next-sanity';
 import { urlFor } from '@/sanity/lib/image';
+import ClosingCTA from '@/app/components/ClosingCTA';
 
 interface Post {
   _id: string;
@@ -203,38 +204,7 @@ export default function BlogPostContent({ post }: { post: Post }) {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-20 bg-primary-blue">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.6 }}
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Ready to Start Your Project?
-            </h2>
-            <p className="text-blue-200 text-lg mb-8 max-w-2xl mx-auto">
-              Our team is ready to come to you, assess the work, and give you a straight answer on what it takes.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/contact"
-                className="px-10 py-4 bg-white text-primary-blue font-bold rounded hover:bg-gray-100 transition-colors text-lg"
-              >
-                Schedule Free Consultation
-              </Link>
-              <a
-                href="tel:833-336-9266"
-                className="px-10 py-4 border-2 border-white text-white font-bold rounded hover:bg-white/10 transition-colors text-lg"
-              >
-                (833) 336-9266
-              </a>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+      <ClosingCTA />
     </article>
   );
 }
