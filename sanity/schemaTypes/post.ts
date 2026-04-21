@@ -29,6 +29,7 @@ export const postType = defineType({
       name: 'mainImage',
       title: 'Main Image',
       type: 'image',
+      description: 'Recommended: 1200×800px (3:2 landscape). Used as the hero at the top of the post and as the card image on the blog listing. Enable the hotspot to control cropping.',
       options: { hotspot: true },
       fields: [
         defineField({
@@ -85,7 +86,7 @@ export const postType = defineType({
           name: 'ogImage',
           title: 'Social Share Image',
           type: 'image',
-          description: 'Image shown when shared on social media. Recommended: 1200×630px. Falls back to the main image.',
+          description: 'Recommended: 1200×630px (1.9:1 landscape). Shown when shared on Facebook, LinkedIn, Twitter/X, iMessage, and Slack. Falls back to the Main Image if left blank, but a dedicated graphic at exactly 1200×630 gives the best result.',
           options: { hotspot: true },
         }),
       ],
@@ -93,6 +94,7 @@ export const postType = defineType({
     defineField({
       name: 'body',
       title: 'Body',
+      description: 'Post content. For images inserted into the body, use 1200×675px (16:9).',
       type: 'array',
       of: [
         { type: 'block' },
@@ -100,8 +102,8 @@ export const postType = defineType({
           type: 'image',
           options: { hotspot: true },
           fields: [
-            defineField({ name: 'alt', type: 'string', title: 'Alt text' }),
-            defineField({ name: 'caption', type: 'string', title: 'Caption' }),
+            defineField({ name: 'alt', type: 'string', title: 'Alt text', description: 'Describe the image for accessibility and SEO.' }),
+            defineField({ name: 'caption', type: 'string', title: 'Caption', description: 'Optional caption displayed below the image.' }),
           ],
         },
       ],

@@ -61,7 +61,7 @@ export default function ContactContent() {
     setError('');
 
     try {
-      const res = await fetch('https://formspree.io/f/xvzzokev', {
+      const res = await fetch('https://formspree.io/f/maqadgkk', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
